@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/html/header";
+import Center from "./components/html/center";
+import image from "./assets/images/nature.webp";
+import "./assets/css/header.css";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <img src={image} alt="images" style={{ width: "100%",height:"100vh", opacity: "90%" }} />
+      <div className="top_left">
+        <h1>
+          <b>slides</b>
+        </h1>
+      </div>
+      <div className="top_right">
+        <Header />
+      </div>
+      <div className="centered">
+        <Center />
+      </div>
     </div>
   );
 }
-
-export default App;

@@ -1,0 +1,64 @@
+.container{
+    position: relative;
+    text-align: center;
+}
+
+.top_left{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+.top_left h1{
+    color: white;
+}
+
+.top_right{
+    position:absolute;
+    top: 8px;
+    right: 25px;
+}
+
+.top_right li{
+    float: right;
+    list-style-type: none;
+    margin: 6px;
+    color: white;
+}
+.top_right li a{
+   text-decoration: none;
+   padding: 10px ;
+    color: white;
+    border-radius: 4px;
+}
+.top_right li a:hover{
+    background-color: beige;
+     color: rgb(230, 88, 88);
+     border: 2px solid rgb(230, 88, 88) ;
+ }
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(255, 255, 255);
+}
+
+.centered .inputButton input{
+    width: 40%;
+    padding: 15px;
+    border-radius: 10px;
+    margin-right: 7px;
+}
+.centered .inputButton button{
+    padding: 14px;
+    margin-right: 7px;
+    background-color: rgb(230, 88, 88);
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+.centered .inputButton button:hover{
+    background-color:white;
+    border:2px solid rgb(230, 88, 88) ;
+    color: rgb(230, 88, 88) ;
+}
